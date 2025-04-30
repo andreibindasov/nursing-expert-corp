@@ -84,6 +84,7 @@ html{
     background: linear-gradient(rgba(151, 136, 95, 0.33), rgba(87, 136, 134, 0.66)), url(/public/images/bg-1.jpg) no-repeat;
     background-size: cover;
     position: relative;
+    user-select: none;
 }
 .banner{
     width: 100%;
