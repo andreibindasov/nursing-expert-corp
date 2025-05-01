@@ -26,24 +26,107 @@ html{
   justify-content: center;
 } */
 
+.navbar{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.9);
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  padding: 3rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.logo{
+  position: absolute;
+  top: 1.5rem;
+  left: 4rem;
+  
+}
+
+.logo a{
+  display: block;
+}
+
+.logo a img{
+  width: 6.6rem;
+  height: 6.6rem;
+  border-radius: 50%;
+}
+
+.logoTitle{
+  position: absolute;
+  top: 2.1rem;
+  left: 13rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .1rem;
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #FFF;
+}
+.logoTitle span{
+  font-size: 3.6rem;
+  color: #9e0e09;
+}
+
+.menu{
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  z-index: 100;
+  top: 2.3rem;
+  right: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.line{
+  width: 100%;
+  height:.2rem;
+  background-color: #fff;
+}
+.line-1{
+  width: 50%;
+}
+.line-3{
+  width: 50%;
+  margin-left: auto;
+}
+
+.contentDiv{
+  width: 100%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+
+}
+
 .content {
   position: relative;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .content h2 {
   color: #fff;
-  font-size: 8em;
+  font-size: 3rem;
   position: absolute;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
 }
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px #03a9f4;
+  -webkit-text-stroke: .1rem #fff;
 }
 
 .content h2:nth-child(2) {
-  color: #03a9f4;
+  color: #800505;
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -78,10 +161,45 @@ html{
   }
 }
 
+.nav-list{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-link{
+  font-family: "Baloo Da 2", sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 4.5rem;
+  letter-spacing: .3rem;
+  margin: 1rem 0;
+  transition: all .4s;
+  background: linear-gradient(to right, #9e0e09, #7a1010);
+  background-clip: text;
+  /* animation: colorChange .4s linear infinite; */
+}
+.nav-link:hover{
+  animation: colorChange .4s linear forwards;
+}
+@keyframes colorChange {
+  0% {
+    color: #fff;
+    background-position: 0% 0%;
+  }
+  100% {
+      color: transparent;
+      background-position: 100% 0%;
+  }
+}
 .section-1{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(151, 136, 95, 0.33), rgba(87, 136, 134, 0.66)), url(/public/images/bg-1.jpg) no-repeat;
+    background: linear-gradient(rgba(48, 47, 45, 0.33), rgba(39, 6, 9, 0.66)), url(/public/images/bg-1.jpg) no-repeat;
     background-size: cover;
     position: relative;
     user-select: none;
