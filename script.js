@@ -32,8 +32,30 @@ btn.addEventListener('click', () => {
 video.addEventListener('timeupdate', () => {
     const barWidth = video.currentTime / video.duration
     bar.style.width = `${barWidth * 100}%`
+
+    if (!video.paused){
+        btn.className = 'far fa-pause-circle'
+        video.style.opacity='.7'
+    }    
+
     if (video.ended){
         btn.className = 'far fa-play-circle'
         video.style.opacity='.3'
     }
 })
+
+// Cards
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 70,
+      stretch: 0,
+      depth: 100,
+      modifier: 3,
+      slideShadows: true,
+    },
+    
+  });

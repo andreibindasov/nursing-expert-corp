@@ -6,6 +6,7 @@
     <title>Nursing Expert Corp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <a href="https://www.vecteezy.com/free-videos/background">Background Stock Videos by Vecteezy</a>
@@ -60,7 +61,7 @@
                     <span class="heading-3">Billing</span>
                     <span class="heading-4">Strategy</span>
                 </h1>
-                <p class="banner-paragraph">Necessitas dat legem non ipsa accipit.</p>
+                <p class="banner-paragraph">•Necessitas•dat•legem•non•ipsa•accipit•</p>
                 <button class="banner-btn">Discover Now</button>
             </div>
         </section>
@@ -69,7 +70,7 @@
             <h1 class="section-heading">About Us</h1>
             <div class="section-heading-line"></div>
             <div class="video-wrapper">
-                <video src="/public/images/video.mp4" class="video"></video>
+                <video src="/public/images/video-2.mp4" class="video" autoplay loop></video>
                 <div class="controls">
                     <div class="video-bar-wrapper">
                         <div class="video-bar"></div>
@@ -96,68 +97,173 @@
         <section class="section-3">
             <h1 class="section-heading">Billing</h1>
             <div class="section-heading-line"></div>
-            <div class="billing-cards-wrapper">
-                <div class="card-front">
-                    <h1 class="card-heading heading-first">Comprehensive Billing and Coding</h1>
-                    <h3 class="card-icon">
-                        <i class="fa-solid fa-file-invoice-dollar"></i>
-                    </h3>
-                    <ul class="card-list list-first">
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Accurate Charge Capture</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>ICD-10 and CPT Coding</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Claim Submission</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Denial Management</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            <span>Regular Audits</span>
-                        </li>
-                    </ul>
-                    <button class="card-btn btn-fisrt">Description</button>
+            <div class="swiper mySwiper">
+
+                <div class="billing-cards-wrapper swiper-wrapper">
+                    <!-- 1st card -->
+                    <div class="billing-card swiper-slide">
+                        <div class="card-front">
+                            <h1 class="card-heading heading-first">Comprehensive Billing</h1>
+                            <h3 class="card-icon">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </h3>
+                            <ul class="card-list list-first">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Accurate Charge Capture</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>ICD-10 and CPT Coding</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Claim Submission</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Denial Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Regular Audits</span>
+                                </li>
+                            </ul>
+                            <button class="card-btn btn-first">Description</button>
+                        </div>
+
+                        <div class="card-back back-first">
+                            <p>
+                                Our comprehensive billing and coding services ensure that all nursing care is accurately documented and billed, maximizing reimbursement and minimizing errors.
+                            </p>
+                        </div>
+                    </div> 
+
+                    <!-- 2nd card -->
+                    <div class="billing-card swiper-slide">
+                        <div class="card-front">
+                            <h1 class="card-heading heading-second">Revenue Cycle Management</h1>
+                            <h3 class="card-icon">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </h3>
+                            <ul class="card-list list-second">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Front-End Processes</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Charge Entry</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Payment Posting</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Follow-Up</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Financial Reporting</span>
+                                </li>
+                            </ul>
+                            <button class="card-btn btn-second">Description</button>
+                        </div>
+
+                        <div class="card-back back-second">
+                            <p>
+                                Our revenue cycle management services cover every step from patient registration to payment collection, ensuring a smooth and efficient financial process.
+                            </p>
+                        </div>
+                    </div> 
+
+                    <!-- 3rd card -->
+                    <div class="billing-card swiper-slide">
+                        <div class="card-front">
+                            <h1 class="card-heading heading-third">Insurance Coordination</h1>
+                            <h3 class="card-icon">
+                                <i class="fa-solid fa-umbrella"></i>
+                            </h3>
+                            <ul class="card-list list-third">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Eligibility Verification</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Pre-Authorization</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Claim Filing</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Appeals and Resubmissions</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Patient Education</span>
+                                </li>
+                            </ul>
+                            <button class="card-btn btn-third">Description</button>
+                        </div>
+
+                        <div class="card-back back-third">
+                            <p>
+                                Our insurance coordination services ensure that all necessary steps are taken to maximize insurance reimbursements and minimize financial burdens on patients.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4th card -->
+                    <div class="billing-card swiper-slide">
+                        <div class="card-front">
+                            <h1 class="card-heading heading-fourth">Compliance and Support</h1>
+                            <h3 class="card-icon">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </h3>
+                            <ul class="card-list list-fourth">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Regulatory Compliance</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>HIPAA Compliance</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Audits and Reviews</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Staff Training</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Policy Development</span>
+                                </li>
+                            </ul>
+                            <button class="card-btn btn-fourth">Description</button>
+                        </div>
+
+                        <div class="card-back back-fourth">
+                            <p>
+                                Our compliance and regulatory support services help healthcare providers navigate complex regulations, ensuring that all billing and coding practices are in line with legal and industry standards.
+                            </p>
+                        </div>
+                    </div>
+                        
                 </div>
-
-                <div class="card-back back-first">
-                    <p>
-                        Our comprehensive billing and coding services ensure that all nursing care is accurately documented and billed, maximizing reimbursement and minimizing errors.
-                    </p>
-                </div>
-                
             </div>
-
-            <!-- <div class="card-front">
-                <h1 class="card-heading heading-first">SECOND</h1>
-                <h3 class="card-icon">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                </h3>
-            </div>
-
-            <div class="card-front">
-                <h1 class="card-heading heading-first">THIRD</h1>
-                <h3 class="card-icon">
-                    <i class="fa-solid fa-umbrella"></i>
-                </h3>
-            </div>
-
-            <div class="card-front">
-                <h1 class="card-heading heading-first">FOURTH</h1>
-                <h3 class="card-icon">
-                    <i class="fa-solid fa-scale-balanced"></i>
-                </h3>
-            </div> -->
+            
         </section> 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
