@@ -35,11 +35,11 @@
             <span>N</span>ursing<span>E</span>xpert<span>C</span>orp
         </div>
         <div class="nav-list">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Billing</a>
-            <a href="#" class="nav-link">Blog</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about-us" class="nav-link">About</a>
+            <a href="#billing" class="nav-link">Billing</a>
+            <a href="#contact" class="nav-link">Blog</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
     </nav> 
 
@@ -53,7 +53,7 @@
     <div class="container">
         <!-- Section 1 -->
          <!-- <img src="/public/images/logo-33.png" alt=""> -->
-        <section class="section-1">
+        <section class="section-1" id="home">
             <div class="banner">
                 <h1 class="banner-heading">
                     <span class="heading-1">Business Ideas</span>
@@ -66,7 +66,7 @@
             </div>
         </section>
         <!-- Sectrion 2 -->
-        <section class="section-2">
+        <section class="section-2" id="about-us">
             <h1 class="section-heading">About Us</h1>
             <div class="section-heading-line"></div>
             <div class="video-wrapper">
@@ -94,7 +94,7 @@
         </section>
         
         <!-- Section 3 -->
-        <section class="section-3">
+        <section class="section-3" id="billing">
             <h1 class="section-heading">Billing</h1>
             <div class="section-heading-line"></div>
             <div class="swiper mySwiper">
@@ -259,7 +259,51 @@
                 </div>
             </div>
             
-        </section> 
+        </section>
+        <section class="section-4" id="contact">
+            <h1 class="section-heading">Contact</h1>
+            <div class="section-heading-line"></div>
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <div class="phone">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Phone</h3>
+                        <p>+1234567890</p>
+                    </div>
+                    <div class="address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>Main St 13</p>
+
+                    </div>
+                    <div class="email">
+                        <i class="far fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>supportus@gmail.com</p>
+                    </div>
+                </div>
+                <h1>Get In Touch</h1>
+                <form action="" class="contact-form">
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <textarea name="ta" id="ta" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+         <footer class="footer">
+            <div class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about-us">About Us</a>
+                <a href="#billing">Billing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">
+                by <span>φ</span>Andrei A<span><img src="/public/images/dot-circle.svg"/></span>Bindasov. [2025]. All Rights Reserved.
+            </p>
+         </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
