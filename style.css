@@ -235,7 +235,7 @@ html{
 .section-1{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(48, 47, 45, 0.33), rgba(39, 6, 9, 0.66)), url("./images/bg-1.jpg") no-repeat;
+    background: linear-gradient(rgba(48, 47, 45, 0.33), rgba(39, 6, 9, 0.66)), url("./images/bg-2.jpg") no-repeat;
     background-size: cover;
     position: relative;
     user-select: none;
