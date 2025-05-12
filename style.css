@@ -28,6 +28,10 @@ html{
   justify-content: center;
 } */
 
+.hidden-prop{
+  display: none;
+}
+
 .navbar{
   width: 100%;
   height: 9rem;
@@ -88,7 +92,7 @@ html{
   position: fixed;
   z-index: 100;
   top: 2.3rem;
-  right: 4rem;
+  right: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -231,7 +235,7 @@ html{
 .section-1{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(48, 47, 45, 0.33), rgba(39, 6, 9, 0.66)), url(/public/images/bg-1.jpg) no-repeat;
+    background: linear-gradient(rgba(48, 47, 45, 0.33), rgba(39, 6, 9, 0.66)), url("./images/bg-2.jpg") no-repeat;
     background-size: cover;
     position: relative;
     user-select: none;
@@ -239,23 +243,24 @@ html{
 .banner{
     width: 100%;
     position: absolute;
-    top: 20%;
+    top: 33%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    
 }
 .banner-heading{
     margin-bottom: 4rem;
-    height: 20rem;
+    height: 12rem;
     perspective: 50rem;
     overflow: hidden;
 }
 .banner-heading span{
     font-family: 'Oswald', sans-serif;
-    font-size: 12rem;
+    font-size: 7.7rem;
     font-weight: 400;
-    color: #000;
-    text-shadow: .3rem .3rem .6rem rgba(255,255,255,.6);
+    color: #fff;
+    text-shadow: .3rem .3rem .6rem rgba(0,0,0,.6);
     position: absolute;
     width: 100%;
     display: flex;
@@ -265,14 +270,17 @@ html{
     transform: translateZ(8rem);
     opacity: 0;
     letter-spacing: 3rem;
+
+    overflow: hidden;
+    
 }
 .banner-paragraph{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #fff;
     background-color: rgba(0,0,0,.6);
-    width: 45%;
+    width: 66%;
     margin: 0 auto 4rem auto;
     padding: 1rem 0;
     box-shadow: 1rem 1rem 5rem rgba(0,0,0,.6);
@@ -450,7 +458,7 @@ html{
 
 
 .section-2-paragraph{
-  width: 111rem;
+  width: 88rem;
   position: absolute;
   bottom: 3rem;
   right: 15rem;
@@ -785,4 +793,189 @@ html{
   filter: invert(50%) sepia(100%) ; 
   /*saturate(10%) hue-rotate(180deg)*/
 
+}
+
+@media (max-width:1800px){
+  .banner-heading span{
+    font-size: 6.6rem;
+    letter-spacing: 1.8rem; 
+  }
+
+  .video-wrapper{
+    right: 12rem;
+    top: 11rem;
+
+  }
+  .section-2-paragraph{
+    right: 12rem;
+    bottom: 8rem;
+  }
+  .section-heading-line{
+    width: 12rem;
+    
+  }
+}
+@media (max-width:1600px){
+  
+  .section-2, .section-3, .section-4{
+    padding: 0 6rem;
+  }
+  .section-heading-line{
+    width: 7rem;
+  }
+  .section-heading{
+    font-size: 9rem;
+   
+  }
+}
+@media (max-width:1500px){
+  html{
+    font-size: 58%;   
+  }
+  .video-wrapper{
+    right: 12rem;
+    top: 12rem;
+
+  }
+  .section-2-paragraph{
+    right: 12rem;
+    bottom: 6rem;
+  }
+  .section-heading-line{
+    display: none;
+  }
+}
+
+@media (max-width:1400px){
+  html{
+    font-size: 45%;   
+  }
+  .banner-heading{
+    height: 9rem;
+  }
+  .banner-heading span{
+    font-size: 5.5rem;
+    letter-spacing: 1.2rem; 
+  }
+  .banner-paragraph{
+    width: 88%;
+  }
+
+  .section-2, .section-3, .section-4{
+    flex-direction: column;
+  }
+  .section-3 .section-heading, .section-4 .section-heading{
+    margin-bottom: 6rem;
+  }
+
+  .section-heading{
+    margin-top: 11rem;
+  }
+
+  .section-2{
+    height: 120vh;
+  }
+  
+  .video-wrapper{
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 39rem;
+  }
+  .section-2-paragraph{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3rem;
+  }
+  .section-3, .section-4{
+    height: auto;
+  }
+  .mySwiper{
+    width: 100%;
+  }
+}
+
+@media (max-width:900px){
+  html{
+    font-size: 33%;   
+  }
+
+  .section-2-paragraph{
+    bottom: 12rem;
+  }
+  .mySwiper{
+    bottom: 6rem;
+  }
+  .section-heading{
+    margin-top: 8rem;
+  }
+  .contact-wrapper{
+    margin-bottom: 6rem;
+  }
+  .footer{
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width:700px){
+  html{
+    font-size: 30%;   
+  }
+
+  .banner{
+    top: 40%;
+  }
+  .banner-heading{
+    height: 7rem;
+  }
+  .banner-heading span{
+    font-size: 3.9rem;
+    letter-spacing: .9rem; 
+  }
+
+  .section-2{
+    height: 100vh;
+  }
+
+  .contact-details div{
+    margin: 3rem 2rem;
+  }
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width:500px){
+  html{
+    font-size: 27%;   
+  }
+  .banner{
+    top: 45%;
+  }
+  .banner-heading{
+    height: 6rem;
+  }
+  .banner-heading span{
+    font-size: 2.7rem;
+    letter-spacing: 1rem !important; 
+  }
+  .banner-paragraph{
+    width: 100%;
+    font-size: 2.4rem;
+    margin: 6rem auto 9rem auto;
+  }
+  .video-wrapper{
+    width: 60rem;
+  }
+  .section-2-paragraph{
+    width: 60rem;
+  }
+  .contact-details div{
+    width: 18rem;
+    margin: 3rem 1rem;
+  }
+  .contact-form{
+    width: 60rem;
+  }
 }
