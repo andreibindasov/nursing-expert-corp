@@ -772,6 +772,7 @@ html{
 }
 
 .copyright{
+  display: none;
   /* position: absolute; */
   font-size: 1.5rem;
   font-weight: 200;
